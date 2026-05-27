@@ -1,0 +1,222 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:arial;
+    border: border-box;
+}
+@font-face{
+    font-family: "atlantis logo";
+    src: url("./assets/Kenyan_Coffee_Rg.otf") format("opentype");
+}
+body{
+    background-color: black;
+}
+.navbar{
+    height:90px;
+    background-color: rgb(15, 15, 15);
+    color:whitesmoke;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height:90px;
+    width:150px;
+
+}
+.logo{
+    background-image: url("./assests/logo.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: right;
+    height:100%;
+    width:100%;
+
+}
+.border{
+    border: 1px solid transparent; 
+}
+.border:hover{
+    border: 1px solid rgba(245, 245, 245, 0.516) ;
+    border-radius: 6px;
+}
+.nav-address
+{
+    color:whitesmoke;
+}
+.add1{
+    color: rgba(245, 245, 245, 0.543);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:1rem;
+    margin-left:19px;
+}
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(15, 15, 15);
+    width:620px;
+    height:40px;
+    border:black 2px solid;
+    border-radius: 5px;
+
+}
+.search-select{
+    background-color:#e06fff;
+    border:black 1px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width:45px;
+    text-align: center;
+
+}
+.search-input{
+    width:100%;
+    border:black 1px solid;
+     border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size:1rem;
+
+
+}
+
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5rem;
+    background-color:  rgb(29, 29, 29);
+    color: #e06fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+span{
+    font-size: 0.9rem;
+}
+.nav-second{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.nav-search:hover{
+    border:#9600c0 2px solid;
+}
+.nav-cart i{
+    font-size: 1.8rem;
+
+}
+.nav-cart{
+    font-size: 0.9rem;
+    font-weight: 700;
+    
+}
+.panel{
+    height:40px;
+    background-color:#30003f;
+    display:flex;
+    color:whitesmoke;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops a {
+    display:inline;
+    text-decoration: none;
+    color:whitesmoke;
+    margin-left: 15px;
+    
+}
+.panel-ops {
+
+    width:70%;
+    font-size:0.9rem;
+}
+.panel-deals {
+    font-size:0.9rem;
+    font-weight:700;
+}
+.hero-section{
+    background-image: url("./assests/hero.png");
+    height:450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.hero-msg{
+    background-color:#30003f;
+    color:whitesmoke;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    width:95%;
+    margin-bottom: 25px;
+
+}
+.hero-msg a {
+    text-decoration: none;
+}
+.shop-section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(10, 10, 10);
+}
+.box {
+    border: 0.5px solid black;
+    height: 320px;
+    width: 21%;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 2%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+.box-img {
+    width: 101%;
+    height: 250px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+
+    background-size: cover;
+}
+.box:hover {
+    transform: scale(1.01);
+      box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.75),
+    0 0 18px rgba(120, 0, 160, 0.5),
+    0 0 45px rgba(90, 0, 130, 0.35);
+}
+.box4 .box-img {
+  background-position: 50% 10%;
+}
+.box-content p {
+    color: rgb(138, 103, 150);
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.box-head {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(176, 176, 176);
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.box:hover .box-head,
+.box:hover .box-content p {
+    color: #edc8ff;
+    text-shadow: 0 0 10px rgba(224, 111, 255, 0.7);
+}
+footer {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(130, 130, 130);
+}
